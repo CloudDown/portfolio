@@ -79,6 +79,17 @@ header {
   gap: 1.5rem;
 }
 
+.github-nav {
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+
+.github-nav:hover {
+  opacity: 0.7;
+}
+
 .nav-links {
   display: flex;
   gap: 1.5rem;
@@ -134,18 +145,37 @@ header {
   max-width: 700px;
 }
 
-.hero h1 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
+.hero-eyebrow {
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  opacity: 0.75;
 }
 
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.hero-lead,
 .hero p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
 .cta-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   padding: 0.75rem 1.5rem;
   background: #000000;
   color: #ffffff;
@@ -157,6 +187,33 @@ header {
 .cta-button:hover {
   background: transparent;
   color: #000000;
+}
+
+.cta-secondary {
+  background: transparent;
+  color: #000000;
+}
+
+.cta-secondary:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: -0.5rem auto 0;
+  color: #555555;
+}
+
+.section-intro a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.section-foot {
+  text-align: center;
+  margin-top: 2rem;
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -243,6 +300,35 @@ header {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.project-lang {
+  opacity: 0.8;
+}
+
+.project-badge,
+.project-stars {
+  border: 1px solid currentColor;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+.project-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  border-style: none;
+  opacity: 0.85;
+}
+
 .project-card h3 {
   margin-bottom: 0.5rem;
 }
@@ -254,7 +340,80 @@ header {
 
 .project-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
+}
+
+.github-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0 1rem;
+}
+
+.github-stats .stat {
+  text-align: center;
+  min-width: 7rem;
+}
+
+.github-stats .stat span {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.github-stats .stat small {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.75rem;
+}
+
+.loading-msg,
+.github-error {
+  text-align: center;
+  grid-column: 1 / -1;
+  color: #555555;
+}
+
+.github-error a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.skills-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.skills-group h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.about-bio a,
+.contact-info a,
+footer a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 0 1.25rem;
+  }
 }
 
 .project-link {
@@ -490,6 +649,22 @@ footer {
 .dark-theme .cta-button:hover {
   background: transparent;
   color: #ffffff;
+}
+
+.dark-theme .cta-secondary {
+  background: transparent;
+  color: #ffffff;
+}
+
+.dark-theme .cta-secondary:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.dark-theme .section-intro,
+.dark-theme .loading-msg,
+.dark-theme .github-error {
+  color: #aaaaaa;
 }
 
 .dark-theme .detail-card {

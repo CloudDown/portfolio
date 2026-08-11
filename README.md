@@ -1,6 +1,6 @@
 # Portfolio — Maxime Lauber
 
-Site vitrine statique (HTML/CSS). Hébergement : **GitHub Pages** ([CloudDown/portfolio](https://github.com/CloudDown/portfolio)).
+Site vitrine statique (HTML/CSS/JS). Les projets phares pointent vers GitHub ; la section « Sur GitHub » charge les dépôts publics via l’API (`CloudDown`).
 
 ## Fichiers
 
@@ -8,6 +8,7 @@ Site vitrine statique (HTML/CSS). Hébergement : **GitHub Pages** ([CloudDown/po
 |---------|------|
 | `index.html` | Page principale |
 | `styles.css` | Styles |
+| `script.js` | Thème, formulaire mailto, sync GitHub |
 | `pp.png` | Photo profil |
 
 ## Preview local
@@ -22,8 +23,6 @@ python3 -m http.server 8080 --bind 127.0.0.1
 
 Push sur `main` → GitHub Pages (repo `CloudDown/portfolio`).
 
+Profil GitHub : [github.com/CloudDown](https://github.com/CloudDown).
+
 Les coordonnées dans `index.html` sont **publiques** (vitrine volontaire).
-
-## Agents
-
-Site séparé des apps (`quest/`, `dispo/`, `Vif/`, …) — chacun a son propre dépôt. Mettre à jour la section « Projets » avec les liens GitHub publics.
