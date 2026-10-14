@@ -1,32 +1,20 @@
-# Portfolio — Maxime Lauber
+<h1 align="center">Portfolio — Maxime Lauber</h1>
+<p align="center">Engineering student @ Polytechnique Montréal, building native Linux/Omarchy apps in Rust.</p>
+<p align="center"><a href="https://clouddown.github.io/portfolio/"><b>clouddown.github.io/portfolio</b></a></p>
 
-Live: https://clouddown.github.io/portfolio/
+<table>
+  <tr>
+    <td width="50%" align="center"><img src="img/inkarchy.png" alt="Inkarchy" /><br /><sub>Inkarchy — stylus notes for Omarchy</sub></td>
+    <td width="50%" align="center"><img src="img/cobalt.png" alt="Cobalt Download" /><br /><sub>Cobalt Download — Omarchy bar panel</sub></td>
+  </tr>
+</table>
 
-Personal site of Maxime Lauber (CloudDown / @Passkultur): engineering student at Polytechnique Montréal building native Linux/Omarchy apps in Rust.
-
-Plain static site (HTML/CSS/JS), no build step, no framework. It features Inkarchy, Cobalt Download, Mue and polymtl-moodle-connect, with screenshots, stack tags and links to code and releases.
-
-## Files
-
-| File | Role |
-|------|------|
-| `index.html` | Main page |
-| `styles.css` | Styles (dark/light theme, responsive) |
-| `script.js` | Theme toggle, mailto contact form |
-| `img/` | Project screenshots |
-| `pp.png` | Profile photo |
-
-## Local preview
+## Run locally
 
 ```bash
-python3 -m http.server 8080
-# then open http://localhost:8080
+python3 -m http.server 8080   # then open http://localhost:8080
 ```
 
-## Deploy
+Plain HTML/CSS/JS, no build step. Deployed by GitHub Pages from `main`.
 
-GitHub Pages from `main` / (root) of `CloudDown/portfolio`.
-
-GitHub profile: [github.com/CloudDown](https://github.com/CloudDown).
-
-Contact details in `index.html` are **public** (intentional showcase).
+<p align="center"><a href="docs/GUIDE.md">Docs</a> · <a href="https://github.com/CloudDown">github.com/CloudDown</a></p>
