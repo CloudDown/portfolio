@@ -1,27 +1,29 @@
 # Portfolio — Maxime Lauber
 
-Static showcase site (HTML/CSS/JS). Featured projects link to GitHub; the “On GitHub” section loads public repos via the API (`CloudDown`).
+Personal site of Maxime Lauber (CloudDown / @Passkultur): engineering student at Polytechnique Montréal building native Linux/Omarchy apps in Rust.
+
+Plain static site (HTML/CSS/JS), no build step, no framework. It features Inkarchy, Cobalt Download, Mue and polymtl-moodle-connect, with screenshots, stack tags and links to code and releases.
 
 ## Files
 
 | File | Role |
 |------|------|
 | `index.html` | Main page |
-| `styles.css` | Styles |
-| `script.js` | Theme, mailto form, GitHub sync |
+| `styles.css` | Styles (dark/light theme, responsive) |
+| `script.js` | Theme toggle, mailto contact form |
+| `img/` | Project screenshots |
 | `pp.png` | Profile photo |
 
 ## Local preview
 
 ```bash
-cd portfolio
-python3 -m http.server 8080 --bind 127.0.0.1
-# → http://127.0.0.1:8080
+python3 -m http.server 8080
+# then open http://localhost:8080
 ```
 
-## Deployment
+## Deploy
 
-Push to `main` → GitHub Pages (repo `CloudDown/portfolio`).
+GitHub Pages from `main` / (root) of `CloudDown/portfolio`.
 
 GitHub profile: [github.com/CloudDown](https://github.com/CloudDown).
 

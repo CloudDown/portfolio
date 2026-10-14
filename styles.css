@@ -740,3 +740,30 @@ footer {
 .dark-theme .social-link:hover {
   color: #aaaaaa;
 }
+
+/* ===== OCT 2026: FLAGSHIP PROJECTS ===== */
+html { scroll-behavior: smooth; }
+.hero { min-height: auto; padding: 7rem 0 3rem; }
+.hero h1 { font-size: 2rem; line-height: 1.3; }
+.hero-photo { width: 160px; height: 160px; }
+img { max-width: 100%; height: auto; display: block; }
+.flagship-list { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; }
+.flagship { display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; border: 1px solid currentColor; padding: 1.5rem; align-items: center; }
+.flagship .shot img { border: 1px solid currentColor; transition: transform 0.2s; }
+.flagship .shot:hover img { transform: translateY(-4px); }
+.flagship h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.flagship h3 small { font-size: 0.8rem; font-weight: 400; opacity: 0.7; }
+.pitch { margin-bottom: 1rem; }
+.feature-list { list-style: square; padding-left: 1.2rem; margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.85; }
+.feature-list li { margin-bottom: 0.3rem; }
+.tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
+.tags span { font-size: 0.75rem; padding: 0.1rem 0.5rem; background: rgba(127,127,127,0.18); }
+.small-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.project-badge.wip { border-style: dashed; }
+.note { font-size: 0.8rem; font-style: italic; }
+@media (max-width: 860px) {
+  .flagship { grid-template-columns: 1fr; padding: 1rem; }
+  .hero h1 { font-size: 1.45rem; }
+  .header-right { gap: 0.9rem; }
+  .logo { font-size: 1.1rem; }
+}

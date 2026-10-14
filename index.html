@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio de Maxime Lauber (CloudDown) — génie logiciel, apps Android, CLI et automatisation.">
-  <title>Portfolio | Maxime Lauber</title>
+  <meta name="description" content="Maxime Lauber (CloudDown) — engineering student at Polytechnique Montréal building native Linux/Omarchy apps in Rust.">
+  <meta property="og:title" content="Maxime Lauber — native Linux apps in Rust">
+  <meta property="og:image" content="img/inkarchy.png">
+  <title>Maxime Lauber | Native Linux/Omarchy apps in Rust</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -17,17 +19,15 @@
       <div class="header-content">
         <a href="#" class="logo">Maxime Lauber</a>
         <div class="header-right">
-          <nav class="nav-links" aria-label="Navigation principale">
-            <a href="#about">À propos</a>
-            <a href="#projects">Projets</a>
-            <a href="#github">GitHub</a>
-            <a href="#skills">Compétences</a>
+          <nav class="nav-links" aria-label="Main navigation">
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
           </nav>
-          <a class="github-nav" href="https://github.com/CloudDown" target="_blank" rel="noopener noreferrer" aria-label="GitHub CloudDown">
-            <i class="fab fa-github"></i>
-          </a>
-          <button type="button" class="theme-toggle" onclick="toggleTheme()">Thème clair</button>
+          <a class="github-nav" href="https://github.com/CloudDown" target="_blank" rel="noopener noreferrer" aria-label="GitHub CloudDown"><i class="fab fa-github"></i></a>
+          <a class="github-nav" href="https://x.com/Passkultur" target="_blank" rel="noopener noreferrer" aria-label="X @Passkultur"><i class="fab fa-x-twitter"></i></a>
+          <button type="button" class="theme-toggle" onclick="toggleTheme()">Light</button>
         </div>
       </div>
     </div>
@@ -36,68 +36,15 @@
   <section class="hero">
     <div class="container">
       <div class="hero-content">
-        <img src="pp.png" alt="Maxime Lauber" class="hero-photo" width="200" height="200">
+        <img src="pp.png" alt="Maxime Lauber" class="hero-photo" width="160" height="160">
         <div class="hero-text">
-          <p class="hero-eyebrow">CloudDown · Montréal</p>
-          <h1>Maxime Lauber</h1>
-          <p class="hero-lead">Étudiant en génie logiciel à Polytechnique Montréal. Apps Android, backends FastAPI, outils CLI et automatisation — le tout open source sur GitHub.</p>
+          <p class="hero-eyebrow">Maxime Lauber · Passager · Montréal</p>
+          <h1>Engineering student @ Polytechnique Montréal, building native Linux/Omarchy apps in Rust.</h1>
+          <p class="hero-lead">Stylus notes, desktop panels, small tools I use every day. Open source, shipped with releases and CI.</p>
           <div class="hero-actions">
-            <a href="#projects" class="cta-button">Voir les projets</a>
-            <a href="https://github.com/CloudDown" class="cta-button cta-secondary" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title">À propos</h2>
-      <div class="about-container">
-        <div class="about-bio">
-          <p>Bonjour — je m’appelle <strong>Maxime Lauber</strong>, j’ai 20 ans et je vis à Montréal. Je construis des apps mobiles (Kotlin / Android), des APIs FastAPI, des outils CLI en Python, et des petits systèmes qui tournent sur Linux et Raspberry Pi.</p>
-          <p>En baccalauréat en <strong>génie logiciel à Polytechnique Montréal</strong> depuis janvier 2026 (après un passage à l’UQAM), je m’intéresse surtout à l’automatisation, aux workflows agents, et aux produits open source utilisables au quotidien.</p>
-          <p>Mon travail actif est sur <a href="https://github.com/CloudDown" target="_blank" rel="noopener noreferrer">github.com/CloudDown</a> — les projets ci-dessous renvoient directement aux dépôts.</p>
-        </div>
-        <div class="about-details">
-          <div class="detail-card">
-            <h3><i class="fas fa-graduation-cap"></i> Formation</h3>
-            <div class="detail-item">
-              <h4>Baccalauréat en génie logiciel</h4>
-              <p><strong>Polytechnique Montréal</strong> · Janvier 2026 – présent</p>
-              <p>Formation en génie logiciel à Polytechnique.</p>
-            </div>
-            <div class="detail-item">
-              <h4>Baccalauréat en génie logiciel</h4>
-              <p><strong>UQAM, Montréal</strong> · 2024 – Janvier 2026</p>
-              <p>Algorithmique, structures de données, bases de données, systèmes d’exploitation.</p>
-            </div>
-            <div class="detail-item">
-              <h4>Baccalauréat général</h4>
-              <p><strong>Collège International Marie de France</strong> · 2021 – 2024</p>
-              <p>Mathématiques · Numérique et sciences informatiques.</p>
-            </div>
-          </div>
-          <div class="detail-card">
-            <h3><i class="fas fa-briefcase"></i> Expériences</h3>
-            <div class="detail-item">
-              <h4>Stage — Lefebvre Dalloz</h4>
-              <p><strong>Paris</strong> · Juin 2022</p>
-              <ul>
-                <li>Observation IT / data center, réunions techniques.</li>
-                <li>Découverte de la gestion d’infrastructures.</li>
-              </ul>
-            </div>
-            <div class="detail-item">
-              <h4>Stage — Capgemini</h4>
-              <p><strong>Lille</strong> · Février 2021</p>
-              <ul>
-                <li>Initiation au développement web (HTML, CSS).</li>
-                <li>Méthodes de travail en équipe technique.</li>
-              </ul>
-            </div>
+            <a href="#projects" class="cta-button">See projects</a>
+            <a href="https://github.com/CloudDown" class="cta-button cta-secondary" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://x.com/Passkultur" class="cta-button cta-secondary" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i> @Passkultur</a>
           </div>
         </div>
       </div>
@@ -106,117 +53,100 @@
 
   <section id="projects" class="section">
     <div class="container">
-      <h2 class="section-title">Projets phares</h2>
-      <p class="section-intro">Sélection de projets actifs, liés à leurs dépôts GitHub.</p>
-      <div class="project-grid" id="featured-projects">
-        <article class="project-card">
-          <div class="project-meta">
-            <span class="project-lang">Kotlin · FastAPI</span>
-            <span class="project-badge">Android</span>
-          </div>
-          <h3>Dispo</h3>
-          <p>App Android + API — partage de disponibilités (« je suis dispo jusqu’à minuit »). Backend FastAPI, APK via GitHub Releases.</p>
-          <div class="project-links">
-            <a href="https://github.com/CloudDown/dispo" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
-            <a href="https://github.com/CloudDown/dispo/releases/latest" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i> APK</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-meta">
-            <span class="project-lang">Kotlin · FastAPI</span>
-            <span class="project-badge">Android</span>
-          </div>
-          <h3>Quest</h3>
-          <p>Quêtes quotidiennes géolocalisées : un lieu par jour, check-in sur place. App Android + API FastAPI.</p>
-          <div class="project-links">
-            <a href="https://github.com/CloudDown/quest" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
-            <a href="https://github.com/CloudDown/quest/releases/latest" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i> APK</a>
+      <h2 class="section-title">Projects</h2>
+      <div class="flagship-list">
+        <article class="flagship">
+          <a class="shot" href="https://github.com/CloudDown/inkarchy" target="_blank" rel="noopener noreferrer"><img src="img/inkarchy.png" alt="Inkarchy: a lined page with drawing tools" width="1200" height="724" loading="lazy" decoding="async"></a>
+          <div class="flagship-body">
+            <div class="project-meta"><span class="project-badge">v0.2.0 · Oct 13, 2026</span><span class="project-lang">Rust · egui · Wayland</span></div>
+            <h3>Inkarchy <small>(formerly Cahier)</small></h3>
+            <p class="pitch">Native stylus note-taking for Omarchy: write on paper, or straight on top of your PDFs.</p>
+            <ul class="feature-list">
+              <li>Open a PDF and annotate it; export keeps the original pages with your ink on top</li>
+              <li>Lined, Cornell, grid, dotted, graph and Canson paper; sticky notes</li>
+              <li>Follows the active Omarchy theme; Wayland tablet and touch input</li>
+              <li>Atomic saves, local-only data, CI with fmt, clippy and tests</li>
+            </ul>
+            <div class="tags"><span>Rust</span><span>egui/eframe</span><span>Wayland</span><span>PDF</span><span>GitHub Actions</span></div>
+            <div class="project-links">
+              <a href="https://github.com/CloudDown/inkarchy" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+              <a href="https://github.com/CloudDown/inkarchy/releases/tag/v0.2.0" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-tag"></i> Release v0.2.0</a>
+            </div>
           </div>
         </article>
 
-        <article class="project-card">
-          <div class="project-meta">
-            <span class="project-lang">Kotlin · FastAPI</span>
-            <span class="project-badge">Privé</span>
-          </div>
-          <h3>Vif</h3>
-          <p>Marketplace de contenus visuels géolocalisés — Android + FastAPI. Dépôt privé ; APK publié sur Releases.</p>
-          <div class="project-links">
-            <a href="https://github.com/CloudDown/Vif/releases/latest" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i> Releases</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-meta">
-            <span class="project-lang">Python</span>
-            <span class="project-badge">CLI</span>
-          </div>
-          <h3>Annie</h3>
-          <p>Anime depuis le terminal : catalogue MyAnimeList, recherche Nyaa, streaming via libtorrent + fzf.</p>
-          <div class="project-links">
-            <a href="https://github.com/CloudDown/annie" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-meta">
-            <span class="project-lang">Python</span>
-            <span class="project-badge">OSINT</span>
-          </div>
-          <h3>Instree</h3>
-          <p>Suivi local des abonnements mutuels Instagram (ajouts, retraits, évolutions) avec interface web FR/EN/ES. Déploiement possible sur Raspberry Pi.</p>
-          <div class="project-links">
-            <a href="https://github.com/CloudDown/instree" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-meta">
-            <span class="project-lang">HTML · CSS</span>
-            <span class="project-badge">Web</span>
-          </div>
-          <h3>Portfolio</h3>
-          <p>Ce site vitrine — synchronisé avec les dépôts publics GitHub de CloudDown.</p>
-          <div class="project-links">
-            <a href="https://github.com/CloudDown/portfolio" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+        <article class="flagship">
+          <a class="shot" href="https://github.com/CloudDown/omarchy-cobalt" target="_blank" rel="noopener noreferrer"><img src="img/cobalt.png" alt="Cobalt Download main panel" width="971" height="507" loading="lazy" decoding="async"></a>
+          <div class="flagship-body">
+            <div class="project-meta"><span class="project-badge">v1.3.9</span><span class="project-lang">Omarchy plugin</span></div>
+            <h3>Cobalt Download</h3>
+            <p class="pitch">An Omarchy bar panel: paste a YouTube, TikTok or X link, save the file. Cobalt first, yt-dlp fallback.</p>
+            <div class="tags"><span>QML</span><span>Python</span><span>JavaScript</span><span>yt-dlp</span></div>
+            <div class="project-links">
+              <a href="https://github.com/CloudDown/omarchy-cobalt" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+              <a href="https://github.com/CloudDown/omarchy-cobalt/releases/tag/v1.3.9" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-tag"></i> Release v1.3.9</a>
+            </div>
           </div>
         </article>
       </div>
+
+      <div class="project-grid small-grid">
+        <article class="project-card">
+          <div class="project-meta"><span class="project-badge wip">In progress</span><span class="project-lang">Kotlin · Rust</span></div>
+          <h3>Mue</h3>
+          <p>Android app for cross apartment swaps in Montréal: match people whose swap brings each of them closer to work or school.</p>
+          <div class="tags"><span>Jetpack Compose</span><span>MapLibre</span><span>Rust/Axum</span><span>SQLite</span></div>
+          <p class="note">Private repository for now.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta"><span class="project-badge">v0.1.1</span><span class="project-lang">TypeScript</span></div>
+          <h3>polymtl-moodle-connect</h3>
+          <p>MCP connector for Polytechnique's Moodle, with student-friendly installers for Windows, macOS and Linux.</p>
+          <div class="tags"><span>TypeScript</span><span>MCP</span><span>Moodle</span></div>
+          <div class="project-links">
+            <a href="https://github.com/CloudDown/polymtl-moodle-connect" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+            <a href="https://github.com/CloudDown/polymtl-moodle-connect/releases/latest" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-tag"></i> Release</a>
+          </div>
+        </article>
+      </div>
+      <p class="section-foot"><a href="https://github.com/CloudDown?tab=repositories" class="cta-button cta-secondary" target="_blank" rel="noopener noreferrer">All repositories on GitHub</a></p>
     </div>
   </section>
 
-  <section id="github" class="section">
+  <section id="about" class="section">
     <div class="container">
-      <h2 class="section-title">Sur GitHub</h2>
-      <p class="section-intro">
-        Dépôts publics chargés depuis
-        <a href="https://github.com/CloudDown?tab=repositories" target="_blank" rel="noopener noreferrer">github.com/CloudDown</a>.
-      </p>
-      <div class="github-stats" id="github-stats" hidden>
-        <div class="stat"><span id="stat-repos">—</span><small>dépôts publics</small></div>
-        <div class="stat"><span id="stat-stars">—</span><small>étoiles</small></div>
-        <div class="stat"><span id="stat-langs">—</span><small>langages</small></div>
+      <h2 class="section-title">About</h2>
+      <div class="about-container">
+        <div class="about-bio">
+          <p>I'm <strong>Maxime Lauber</strong>, 20, based in Montréal. I build native desktop apps for Linux (<a href="https://omarchy.org" target="_blank" rel="noopener noreferrer">Omarchy</a> / Hyprland) in Rust, plus Android apps and the backends behind them.</p>
+          <p>I'm a <strong>software engineering student at Polytechnique Montréal</strong> since January 2026, and I'm looking for internships in systems, Linux desktop or backend work.</p>
+        </div>
+        <div class="about-details">
+          <div class="detail-card">
+            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            <div class="detail-item"><h4>B.Eng. Software Engineering</h4><p><strong>Polytechnique Montréal</strong> · Jan 2026 – present</p></div>
+            <div class="detail-item"><h4>B.Sc. Software Engineering</h4><p><strong>UQAM, Montréal</strong> · 2024 – Jan 2026</p><p>Algorithms, data structures, databases, operating systems.</p></div>
+            <div class="detail-item"><h4>French Baccalauréat</h4><p><strong>Collège International Marie de France</strong> · 2021 – 2024</p><p>Mathematics · Computer science.</p></div>
+          </div>
+          <div class="detail-card">
+            <h3><i class="fas fa-briefcase"></i> Experience</h3>
+            <div class="detail-item"><h4>Intern — Lefebvre Dalloz</h4><p><strong>Paris</strong> · June 2022</p><ul><li>IT / data center observation, technical meetings.</li><li>Introduction to infrastructure management.</li></ul></div>
+            <div class="detail-item"><h4>Intern — Capgemini</h4><p><strong>Lille</strong> · February 2021</p><ul><li>Introduction to web development (HTML, CSS).</li><li>Working methods in a technical team.</li></ul></div>
+          </div>
+        </div>
       </div>
-      <div class="project-grid" id="github-repos">
-        <p class="loading-msg" id="github-loading">Chargement des dépôts…</p>
-      </div>
-      <p class="github-error" id="github-error" hidden></p>
-      <p class="section-foot">
-        <a href="https://github.com/CloudDown" class="cta-button cta-secondary" target="_blank" rel="noopener noreferrer">
-          Voir tout le profil
-        </a>
-      </p>
     </div>
   </section>
 
   <section id="skills" class="section">
     <div class="container">
-      <h2 class="section-title">Compétences</h2>
+      <h2 class="section-title">Skills</h2>
       <div class="skills-groups">
         <div class="skills-group">
-          <h3>Langages</h3>
+          <h3>Languages</h3>
           <div class="skills-container">
+            <div class="skill-item"><i class="fab fa-rust"></i><span>Rust</span></div>
             <div class="skill-item"><i class="fab fa-python"></i><span>Python</span></div>
             <div class="skill-item"><i class="fas fa-mobile-alt"></i><span>Kotlin</span></div>
             <div class="skill-item"><i class="fab fa-java"></i><span>Java</span></div>
@@ -224,20 +154,22 @@
             <div class="skill-item"><i class="fab fa-html5"></i><span>HTML</span></div>
             <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
             <div class="skill-item"><i class="fas fa-terminal"></i><span>Bash</span></div>
-            <div class="skill-item"><i class="fab fa-rust"></i><span>Rust</span></div>
+            <div class="skill-item"><i class="fas fa-code"></i><span>TypeScript</span></div>
           </div>
         </div>
         <div class="skills-group">
-          <h3>Stack & outils</h3>
+          <h3>Stack & tools</h3>
           <div class="skills-container">
+            <div class="skill-item"><i class="fas fa-pen-nib"></i><span>egui / Wayland</span></div>
+            <div class="skill-item"><i class="fab fa-linux"></i><span>Omarchy / Hyprland</span></div>
             <div class="skill-item"><i class="fab fa-android"></i><span>Android</span></div>
-            <div class="skill-item"><i class="fas fa-server"></i><span>FastAPI</span></div>
+            <div class="skill-item"><i class="fas fa-server"></i><span>Axum / FastAPI</span></div>
             <div class="skill-item"><i class="fas fa-database"></i><span>SQL / SQLite</span></div>
             <div class="skill-item"><i class="fab fa-linux"></i><span>Linux</span></div>
             <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
             <div class="skill-item"><i class="fab fa-docker"></i><span>Docker</span></div>
             <div class="skill-item"><i class="fas fa-microchip"></i><span>Raspberry Pi</span></div>
-            <div class="skill-item"><i class="fas fa-robot"></i><span>Automatisation</span></div>
+            <div class="skill-item"><i class="fas fa-robot"></i><span>GitHub Actions</span></div>
           </div>
         </div>
       </div>
@@ -246,14 +178,14 @@
 
   <section id="hobbies" class="section">
     <div class="container">
-      <h2 class="section-title">Centres d’intérêt</h2>
+      <h2 class="section-title">Interests</h2>
       <div class="hobbies-container">
-        <div class="hobby-item"><i class="fas fa-gamepad"></i><span>Jeux vidéo</span></div>
-        <div class="hobby-item"><i class="fas fa-shield-alt"></i><span>Cybersécurité</span></div>
-        <div class="hobby-item"><i class="fas fa-robot"></i><span>IA / agents</span></div>
+        <div class="hobby-item"><i class="fas fa-gamepad"></i><span>Video games</span></div>
+        <div class="hobby-item"><i class="fas fa-shield-alt"></i><span>Security</span></div>
+        <div class="hobby-item"><i class="fas fa-robot"></i><span>AI / agents</span></div>
         <div class="hobby-item"><i class="fas fa-microchip"></i><span>Hardware / Pi</span></div>
         <div class="hobby-item"><i class="fas fa-table-tennis"></i><span>Tennis</span></div>
-        <div class="hobby-item"><i class="fas fa-globe"></i><span>Astronomie</span></div>
+        <div class="hobby-item"><i class="fas fa-globe"></i><span>Astronomy</span></div>
       </div>
     </div>
   </section>
@@ -262,10 +194,10 @@
     <div class="container">
       <h2 class="section-title">Contact</h2>
       <div class="contact-content">
-        <p>Question, collab, stage ou idée de projet — écris-moi.</p>
+        <p>Internship, collaboration or project idea? Write to me.</p>
         <form class="contact-form" id="contact-form">
           <div class="form-group">
-            <label for="name">Nom</label>
+            <label for="name">Name</label>
             <input type="text" id="name" name="name" required autocomplete="name">
           </div>
           <div class="form-group">
@@ -276,12 +208,13 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" required></textarea>
           </div>
-          <button type="submit" class="submit-button">Envoyer par email</button>
+          <button type="submit" class="submit-button">Send by email</button>
         </form>
         <div class="contact-info">
           <p><i class="fas fa-phone"></i> <a href="tel:+14385587195">(438) 558-7195</a></p>
           <p><i class="fas fa-envelope"></i> <a href="mailto:maxime.lauber@gmail.com">maxime.lauber@gmail.com</a></p>
           <p><i class="fab fa-github"></i> <a href="https://github.com/CloudDown" target="_blank" rel="noopener noreferrer">github.com/CloudDown</a></p>
+          <p><i class="fab fa-x-twitter"></i> <a href="https://x.com/Passkultur" target="_blank" rel="noopener noreferrer">@Passkultur</a></p>
           <p><i class="fas fa-map-marker-alt"></i> Outremont, QC, Canada</p>
         </div>
       </div>
@@ -293,6 +226,7 @@
       <p>&copy; <span id="year">2026</span> Maxime Lauber · <a href="https://github.com/CloudDown" target="_blank" rel="noopener noreferrer">CloudDown</a></p>
       <div class="social-links">
         <a href="https://github.com/CloudDown" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://x.com/Passkultur" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fab fa-x-twitter"></i></a>
         <a href="mailto:maxime.lauber@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
