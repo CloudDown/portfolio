@@ -136,6 +136,9 @@ header {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center;
+  background: #fff;
+  display: block;
   border: 3px solid #000000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
