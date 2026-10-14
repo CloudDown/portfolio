@@ -770,3 +770,4 @@ img { max-width: 100%; height: auto; display: block; }
   .header-right { gap: 0.9rem; }
   .logo { font-size: 1.1rem; }
 }
+.flagship .shot img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
