@@ -4,7 +4,7 @@ Live: https://clouddown.github.io/portfolio/
 
 Personal site of Maxime Lauber (CloudDown / @Passkultur): engineering student at Polytechnique Montréal building native Linux/Omarchy apps in Rust.
 
-Plain static site (HTML/CSS/JS), no build step, no framework. It features Inkarchy, Cobalt Download, Mue and polymtl-moodle-connect, with screenshots, stack tags and links to code and releases.
+Plain static site (HTML/CSS/JS), no build step, no framework. It features Inkarchy, Cobalt Download and polymtl-moodle-connect, with screenshots, stack tags and links to code and releases.
 
 ## Files
 
